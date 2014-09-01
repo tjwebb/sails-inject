@@ -1,6 +1,6 @@
 {
   "name": "sails-inject-models",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inject additional sails.js models from inside a hook",
   "main": "index.js",
   "scripts": {
