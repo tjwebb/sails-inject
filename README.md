@@ -10,13 +10,21 @@ $ npm install sails-inject-models --save
 ```
 
 ## Usage
+e.g. with [sails-permissions](https://www.npmjs.org/package/sails-permissions):
 
+```js
+// api/hooks/permissions.js
+module.exports = require('sails-permissions');
+```
+The additional models `User`, `Role`, `Permission`, and `Model` will be initialized and available in the global namespace.
 
 ## License
 MIT
 
 ## Attribution
-Much of this implementation is adapted from [this Stackoverflow post](http://stackoverflow.com/questions/21085624/how-to-create-a-normal-sails-model-without-being-in-the-models-folder)
+Much of this implementation is adapted from:
+- [this Stackoverflow post](http://stackoverflow.com/questions/21085624/how-to-create-a-normal-sails-model-without-being-in-the-models-folder)
+- sails [lib/hooks/orm/index.js](https://github.com/balderdashy/sails/blob/master/lib/hooks/orm/index.js)
 
 [sails-logo]: http://cdn.tjw.io/images/sails-logo.png
 [sails-url]: https://sailsjs.org
