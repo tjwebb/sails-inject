@@ -1,6 +1,6 @@
 {
   "name": "sails-inject",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Inject additional models, controllers, etc. into a sails.js from a hook. Extends a sails.js app by injecting another sails.js app into it",
   "main": "index.js",
   "scripts": {
