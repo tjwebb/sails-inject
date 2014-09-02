@@ -27,14 +27,14 @@ The additional models `User`, `Role`, `Permission`, and `Model` will be initiali
 |:---|:---|:---|
 | `options.sails` | global sails object |
 | `options.module` | reference to the main `module.id` of the sails app to inject
-| `options.connection | optional connection to use for the injected models
+| `options.connection` | optional connection to use for the injected models
 
 #### `.injectModels(options, next)`
 | @param | description |
 |:---|:---|:---|
 | `options.sails` | global sails object |
 | `options.models` | list of models in the form `{ definition: Object, globalId: String }`
-| `options.connection | optional connection to use for the injected models
+| `options.connection` | optional connection to use for the injected models
 
 ## License
 MIT
