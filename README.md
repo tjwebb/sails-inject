@@ -15,12 +15,14 @@ $ npm install sails-inject --save
 e.g. with [sails-permissions](https://www.npmjs.org/package/sails-permissions):
 
 ```js
+// api/hooks/myHook.js
+var injector = require('sails-inject');
 injector.injectApp({
   sails: sails,
   module: module.id
 }, next);
 ```
-The additional models `User`, `Role`, `Permission`, and `Model` will be initialized and available in the global namespace.
+The additional models be initialized and available in the global namespace per usual.
 
 ## API
 
