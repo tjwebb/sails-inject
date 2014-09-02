@@ -1,35 +1,38 @@
 {
-  "name": "sails-inject-models",
-  "version": "0.0.2",
-  "description": "Inject additional sails.js models from inside a hook",
+  "name": "sails-inject",
+  "version": "0.1.0",
+  "description": "Inject additional models, controllers, etc. into a sails.js from a hook. Extends a sails.js app by injecting another sails.js app into it",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tjwebb/sails-inject-models.git"
+    "url": "https://github.com/tjwebb/sails-inject.git"
   },
   "keywords": [
     "sails.js",
     "sails",
+    "extend",
+    "plugin",
     "hook",
     "models",
+    "controllers",
     "load",
     "inject"
   ],
   "author": "Travis Webb <me@traviswebb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjwebb/sails-inject-models/issues"
+    "url": "https://github.com/tjwebb/sails-inject/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-inject-models",
+  "homepage": "https://github.com/tjwebb/sails-inject",
   "devDependencies": {
     "mocha": "^1.21.4"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "lodash": "^2.4.1",
-    "waterline": "^0.10.9"
+    "congruence": "^1.6.4",
+    "lodash": "^2.4.1"
   }
 }

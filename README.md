@@ -1,4 +1,4 @@
-# <img src="http://cdn.tjw.io/images/sails-logo.png" height='43px' />-inject-models
+# <img src="http://cdn.tjw.io/images/sails-logo.png" height='42px' />-inject
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -6,17 +6,35 @@
 
 ## Install
 ```sh
-$ npm install sails-inject-models --save
+$ npm install sails-inject --save
 ```
 
 ## Usage
 e.g. with [sails-permissions](https://www.npmjs.org/package/sails-permissions):
 
 ```js
-// api/hooks/permissions.js
-module.exports = require('sails-permissions');
+injector.injectApp({
+  sails: sails,
+  module: module.id
+}, next);
 ```
 The additional models `User`, `Role`, `Permission`, and `Model` will be initialized and available in the global namespace.
+
+## API
+
+#### `.injectApp(options, next)`
+| @param | description |
+|:---|:---|:---|
+| `options.sails` | global sails object |
+| `options.module` | reference to the main `module.id` of the sails app to inject
+| `options.connection | optional connection to use for the injected models
+
+#### `.injectModels(options, next)`
+| @param | description |
+|:---|:---|:---|
+| `options.sails` | global sails object |
+| `options.models` | list of models in the form `{ definition: Object, globalId: String }`
+| `options.connection | optional connection to use for the injected models
 
 ## License
 MIT
@@ -28,9 +46,9 @@ Much of this implementation is adapted from:
 
 [sails-logo]: http://cdn.tjw.io/images/sails-logo.png
 [sails-url]: https://sailsjs.org
-[npm-image]: https://img.shields.io/npm/v/sails-inject-models.svg?style=flat
-[npm-url]: https://npmjs.org/package/sails-inject-models
-[travis-image]: https://img.shields.io/travis/tjwebb/sails-inject-models.svg?style=flat
-[travis-url]: https://travis-ci.org/tjwebb/sails-inject-models
-[daviddm-image]: http://img.shields.io/david/tjwebb/sails-inject-models.svg?style=flat
-[daviddm-url]: https://david-dm.org/tjwebb/sails-inject-models
+[npm-image]: https://img.shields.io/npm/v/sails-inject.svg?style=flat
+[npm-url]: https://npmjs.org/package/sails-inject
+[travis-image]: https://img.shields.io/travis/tjwebb/sails-inject.svg?style=flat
+[travis-url]: https://travis-ci.org/tjwebb/sails-inject
+[daviddm-image]: http://img.shields.io/david/tjwebb/sails-inject.svg?style=flat
+[daviddm-url]: https://david-dm.org/tjwebb/sails-inject
