@@ -10,5 +10,5 @@ deploy:
     secure: Ip+EQ3alYjHi+7t/dP1QlprKsoFSocykLObhfrm7u20aoQiz5VYH4Pdb9TGSl90G3BRo10dMF88jLStegiKcOAFaV1pARWCGnkNs5YaC3NeipJpvMM1HkkiL/p+ochragu/jxs2g4hGv77c8PXiaUaOjoQGqEGvOA00N48n7WCg=
   on:
     tags: true
-    repo: tjwebb/sails-inject-models
+    repo: tjwebb/sails-inject
     all_branches: true
