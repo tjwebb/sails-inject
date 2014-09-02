@@ -1,3 +1,6 @@
-describe('sails-inject-models', function () {
+describe('sails-inject', function () {
+  it('can be required', function () {
+    require('./');
+  });
   
 });
