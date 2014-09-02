@@ -4,6 +4,8 @@
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 
+Inject additional models, controllers, etc. into a sails.js from a hook. Extends a sails.js app by injecting another sails.js app into it
+
 ## Install
 ```sh
 $ npm install sails-inject --save
