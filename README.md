@@ -1,3 +1,5 @@
+#### Note: This project is deprecated in favor of https://github.com/tjwebb/sails-generate-entities to build addon modules. See https://github.com/tjwebb/sails-permissions/blob/master/index.js for an example.
+
 # <img src="http://cdn.tjw.io/images/sails-logo.png" height='42px' />-inject
 
 [![NPM version][npm-image]][npm-url]
